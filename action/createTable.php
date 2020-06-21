@@ -19,5 +19,5 @@ function creteTable($tableInf){
         $active_sheet->setCellValue($cellB,$value);
         $count++;
     }
-    $objWriter->save(str_replace(__FILE__,'table.xlsx',__FILE__));
+    $objWriter->save(str_replace(__FILE__,'../upload_files/table.xlsx',__FILE__));
 }
