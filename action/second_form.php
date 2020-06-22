@@ -14,13 +14,13 @@ if(!empty($data)){
     $_SESSION['text']=$data['text'];
     $_SESSION['sum']=$data['sum'];
 //вывод каждой второй буквы элемента массива
-    $arr=[$data['name'],$data['email'],$data['text']];
-    $newArr='';
+    $arr = [$data['name'],$data['email'],$data['text']];
+    $newArr = '';
     foreach($arr as $value){
-        $arr1=str_split($value);
-        $newString=[];
+        $arr1  = str_split($value);
+        $newString = [];
         foreach($arr1 as $key=>$value1){
-            if($key%2!=0){
+            if($key%2 != 0) {
                 if($value1!=' ' && ctype_alpha($value1)==true){
                     $newString[]=$value1;
                 }else{
@@ -35,14 +35,14 @@ if(!empty($data)){
     $first_element=str_split ($arr[0]);
 //длинна первого элемента массива прописью
     $text = num_of_words(count($first_element));
-    $_SESSION['length']=$text;
+    $_SESSION['length'] = $text;
 //сумма элементов массива в столбик
-    $arr=[$data['num1'],$data['num2'],$data['sum']];
-    $arrSum=array_sum($arr);
-    $stringArr=str_split(strval($arrSum));
-    $_SESSION['sum_column']='';
+    $arr = [$data['num1'],$data['num2'],$data['sum']];
+    $arrSum = array_sum($arr);
+    $stringArr = str_split(strval($arrSum));
+    $_SESSION['sum_column'] = '';
     foreach($stringArr as $value){
-        $_SESSION['sum_column'].=strval($value).'<br>';
+        $_SESSION['sum_column'].= strval($value).'<br>';
     }
 
 }
