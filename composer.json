@@ -1,0 +1,9 @@
+{
+    "name": "tork25/webstripe1",
+    "require": {
+        "phpoffice/phpexcel": "^1.8",
+        "phpmailer/phpmailer": "^6.1",
+        "twbs/bootstrap": "^4.5",
+        "swiftmailer/swiftmailer": "6.0"
+    }
+}
