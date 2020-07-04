@@ -4,60 +4,19 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc77ee7e6ab5bdf05abbb57c848d46984
+class ComposerStaticInit6c48d278d20506a3b407bfbbe2245a1a
 {
-    public static $files = array (
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
-        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
-        'S' => 
-        array (
-            'Symfony\\Polyfill\\Php72\\' => 23,
-            'Symfony\\Polyfill\\Mbstring\\' => 26,
-            'Symfony\\Polyfill\\Intl\\Idn\\' => 26,
-        ),
         'P' => 
         array (
             'PHPMailer\\PHPMailer\\' => 20,
         ),
-        'E' => 
-        array (
-            'Egulias\\EmailValidator\\' => 23,
-        ),
-        'D' => 
-        array (
-            'Doctrine\\Common\\Lexer\\' => 22,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Symfony\\Polyfill\\Php72\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-php72',
-        ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
-        ),
-        'Symfony\\Polyfill\\Intl\\Idn\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-idn',
-        ),
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
-        ),
-        'Egulias\\EmailValidator\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/egulias/email-validator/src',
-        ),
-        'Doctrine\\Common\\Lexer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
         ),
     );
 
@@ -74,9 +33,9 @@ class ComposerStaticInitc77ee7e6ab5bdf05abbb57c848d46984
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc77ee7e6ab5bdf05abbb57c848d46984::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc77ee7e6ab5bdf05abbb57c848d46984::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitc77ee7e6ab5bdf05abbb57c848d46984::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6c48d278d20506a3b407bfbbe2245a1a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6c48d278d20506a3b407bfbbe2245a1a::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit6c48d278d20506a3b407bfbbe2245a1a::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
