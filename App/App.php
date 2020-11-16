@@ -26,7 +26,7 @@ function sendEmail($name,$email){
     $mail -> Password   = ''; 
     $mail -> SMTPSecure = 'ssl';
     $mail -> Port       = 465;
-    $mail -> setFrom('sibiriannomad@gmail.com', 'Webstripe'); 
+    $mail -> setFrom('', 'Webstripe'); 
     $mail -> addAddress($email); 
     
    if(!empty($_FILES['fileUpload']['name'])){
