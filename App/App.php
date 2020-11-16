@@ -21,9 +21,9 @@ function sendEmail($name,$email){
     $mail -> SMTPAuth   = true;
     $mail -> Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
-    $mail -> Host       = 'smtp.gmail.com'; 
-    $mail -> Username   = 'sibiriannomad@gmail.com';
-    $mail -> Password   = 'Faraon25'; 
+    $mail -> Host       = ''; 
+    $mail -> Username   = '';
+    $mail -> Password   = ''; 
     $mail -> SMTPSecure = 'ssl';
     $mail -> Port       = 465;
     $mail -> setFrom('sibiriannomad@gmail.com', 'Webstripe'); 
